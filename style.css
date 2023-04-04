@@ -192,18 +192,19 @@ input:checked + .slider::before
     color: #ffffff;
 }
 
+
 .learn-more-button
 {
     cursor: pointer;
     outline: none;
     border: none;
-    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-weight: 600;
     font-size: 0.7rem;
     padding: 0.65rem 3rem ;
     text-align: center;
+    color: #ffffff;
     border-radius: 0.5rem;
     margin-top: 0.4rem;
     margin-left: 0.35rem;
@@ -212,12 +213,28 @@ input:checked + .slider::before
 .brighter.offer-box .learn-more-button
 {
     background: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    border: 0.1vw solid hsl(237, 63%, 64%);
 }
 
 .darker.offer-box .learn-more-button
 {
     color:hsl(237, 63%, 64%);
+    border:  0.1vw solid #ffffff;
     background-color: #ffffff;
+}
+
+.brighter.offer-box .learn-more-button:hover
+{
+    background: #ffffff;
+    color: hsl(237, 63%, 64%);
+    border: 0.1vw solid linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+}
+
+.darker.offer-box .learn-more-button:hover
+{
+    color:#ffffff;
+    border:  0.1vw solid #ffffff;
+    background: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
 }
 
 #monthly-box
